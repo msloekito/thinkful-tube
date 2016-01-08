@@ -1,22 +1,3 @@
-// // $(function(){
-
-// //   function getRequest(searchTerm){
-// //   var params = {
-//     			part: "snippet",
-// 				type: "video",
-// 				q: encodeURIComponent($("#search").val()).replace(/%20/g, "+"),
-// 				maxResults: 3,
-// 				order: "viewCount",
-//   };
-//   url = 'https://www.googleapis.com/youtube/v3/search';
-
-//   $.getJSON(url, params, function(data){
-//     showResults(data.Search);
-//     console.log("test");
-//   });
-// }
-// })
-
 $(function() {
 // Your use of the YouTube API must comply with the Terms of Service:
 // https://developers.google.com/youtube/terms
@@ -63,34 +44,5 @@ var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://www.googleapis.com/youtube/v3/search", true);
 // xhr.send();
 
-// console.log(xhr.status);
-// $.ajax({
-// 	type: 'GET',
-// 	url: 'https://www.googleapis.com/youtube/v3/search',
-// 	success: function(data) {
-// 		console.log('success', data)
-// 	}
-// })
-// 	$("form").on("submit", function(e) {
-// 		e.preventDefault();
-// 		//prepare the request
-// 		var request = gapi.client.youtube.search.list({
-// 				part: "snippet",
-// 				type: "video",
-// 				q: encodeURIComponent($("#search").val()).replace(/%20/g, "+"),
-// 				maxResults: 3,
-// 				order: "viewCount",
-// 				});
-// 				//execute the request
-// 				request.execute(function(response) {
-// 					console.log(response);
-// 		});
-// 	});
-// });
 
-// function init() {
-// 	gapi.client.setApiKey("AIzaSyCmMt3baqu1S_tWLLaJjDkUHK65ue81oVU");
-// 	gapi.client.load("youtube", "v3", function(){
-// 		//youtube api is ready
-// 	});
 })
